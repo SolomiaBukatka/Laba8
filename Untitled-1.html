@@ -1,0 +1,65 @@
+
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery.min.js">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<nav role="navigation" class="navbar navbar-default">
+<div class="navbar-header">
+<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle" >
+<span class="sr-only" > Toggle navigation</span>
+<span class="icon-bar" ></span>
+<span class="icon-bar" ></span>
+<span class="icon-bar" ></span>
+</button>
+<a href="#" class="navbar-brand" >Бренд</a>
+</div>
+<div id="navbarCollapse" class="collapse navbar-collapse" >
+<ul class="nav navbar-nav" >
+<li class="active" ><a href="#"> Головна</a></li>
+<li><a href="#"> Статті </a></li>
+<li><a href="#" > Новини </a></li>
+</ul>
+<ul class ="nav navbar-nav navbar-right">
+<li><a href="#"> Вхід</a></li>
+</ul>
+</div>
+</nav>
+
+<a href="#" class="btn btn-primary">Відкрити модальне вікно</a>
+ 
+<div id="myModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">х</button>
+        <h4 class="modal-title">Привіт! Це модальне вікно</h4>
+      </div>
+      <div class="modal-body">
+        <p>В графічному інтерфейсі користувача модальним називається вікно, яке блокує роботу користувача з батьківським додатком до тих пір, поки користувач це вікно не закриє. Модальними переважно реалізовані діалогові вікна. Також модальні вікна часто використовуються для залучення уваги користувача до важливої ​​події або критичної ситуації.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрити</button>
+        <button type="button" class="btn btn-primary">Зберегти</button>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<script>
+$(document).ready(function(){
+  $(".btn").click(function() {
+    $("#myModal").modal('show');
+  });
+});
+</script>
+</body>
+</html>
